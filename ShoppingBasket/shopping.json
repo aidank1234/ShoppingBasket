@@ -3,51 +3,60 @@
     {
       "name": "1 16lb bag of Skittles",
       "price": 16.00,
-      "imported": false
+      "imported": false,
+      "exempt": true
     },
     {
       "name": "1 Walkman",
       "price": 99.99,
-      "imported": false
+      "imported": false,
+      "exempt": false
     },
     {
       "name": "1 bag of microwave Popcorn",
       "price": 0.99,
-      "imported": false
+      "imported": false,
+      "exempt": true
     }
   ],
   "b2": [
       {
-      "name": "1 bag of Vanilla-Hazelnut Coffee",
+      "name": "1 imported bag of Vanilla-Hazelnut Coffee",
       "price": 11.00,
-      "imported": true
+      "imported": true,
+      "exempt": true
     },
     {
-      "name": "1 Vespa",
+      "name": "1 imported Vespa",
       "price": 15001.25,
-      "imported": true
+      "imported": true,
+      "exempt": false
     }
   ],
   "b3": [
     {
-      "name": "1 crate of Almond Snickers",
+      "name": "1 imported crate of Almond Snickers",
       "price": 75.99,
-      "imported": true
+      "imported": true,
+      "exempt": true
     },
     {
       "name": "1 Discman",
       "price": 55.00,
-      "imported": false
+      "imported": false,
+      "exempt": false
     },
     {
-      "name": "1 bottle of wine",
+      "name": "1 imported bottle of wine",
       "price": 10.00,
-      "imported": true
+      "imported": true,
+      "exempt": false
     },
     {
       "name": "1 300# bag of Fair-Trade Coffee",
       "price": 997.99,
-      "imported": false
+      "imported": false,
+      "exempt": true
     }
   ]
 }

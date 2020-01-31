@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShoppingBasket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E2P-Zq-CRg">
+                                <rect key="frame" x="20" y="81" width="374" height="737"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping List X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18h-VB-9wx">
+                                <rect key="frame" x="20" y="44" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03Z-1e-DwZ">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2RX-ej-ReU"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Previous" id="dlN-Z3-yJg">
+                                        <connections>
+                                            <action selector="previous:" destination="BYZ-38-t0r" id="z1d-ge-ytt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1Uw-sZ-M1C"/>
+                                    <barButtonItem title="Next" id="RXP-Wn-4EJ">
+                                        <connections>
+                                            <action selector="next:" destination="BYZ-38-t0r" id="2vi-Gh-PRD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E2P-Zq-CRg" firstAttribute="centerX" secondItem="03Z-1e-DwZ" secondAttribute="centerX" id="9fg-ca-S6a"/>
+                            <constraint firstItem="E2P-Zq-CRg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ASQ-Qe-61k"/>
+                            <constraint firstItem="18h-VB-9wx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cix-7c-nuU"/>
+                            <constraint firstItem="E2P-Zq-CRg" firstAttribute="top" secondItem="18h-VB-9wx" secondAttribute="bottom" constant="8" id="IBo-EH-19p"/>
+                            <constraint firstItem="03Z-1e-DwZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Rlq-eu-md2"/>
+                            <constraint firstItem="03Z-1e-DwZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RyD-qL-Cuu"/>
+                            <constraint firstItem="18h-VB-9wx" firstAttribute="trailing" secondItem="E2P-Zq-CRg" secondAttribute="trailing" id="cIm-IE-2gq"/>
+                            <constraint firstItem="E2P-Zq-CRg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dra-UD-FjA"/>
+                            <constraint firstItem="03Z-1e-DwZ" firstAttribute="top" secondItem="E2P-Zq-CRg" secondAttribute="bottom" id="fyl-A0-Plx"/>
+                            <constraint firstItem="18h-VB-9wx" firstAttribute="leading" secondItem="E2P-Zq-CRg" secondAttribute="leading" id="v76-db-wW6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="RXP-Wn-4EJ" id="SKQ-3g-LwL"/>
+                        <outlet property="previousButton" destination="dlN-Z3-yJg" id="Orp-cX-pNt"/>
+                        <outlet property="receiptText" destination="E2P-Zq-CRg" id="cTb-tE-EDJ"/>
+                        <outlet property="shoppingListLabel" destination="18h-VB-9wx" id="b61-BA-aUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
