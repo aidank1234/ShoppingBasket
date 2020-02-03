@@ -20,6 +20,10 @@
 		C9C99B1F23E4C70A00DBE392 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99B1E23E4C70900DBE392 /* SwiftyJSON.swift */; };
 		C9FDD50C23E8AAF7000AA0E3 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */; };
 		C9FDD50E23E8B351000AA0E3 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD50D23E8B351000AA0E3 /* StoreVC.swift */; };
+		C9FDD52023E8CDDA000AA0E3 /* TaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD51F23E8CDDA000AA0E3 /* TaxTests.swift */; };
+		C9FDD52123E8CECB000AA0E3 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */; };
+		C9FDD52323E8D1D7000AA0E3 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD52223E8D1D7000AA0E3 /* ItemTests.swift */; };
+		C9FDD52423E8D22D000AA0E3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99B1823E4BBEB00DBE392 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,13 @@
 			remoteInfo = ShoppingBasket;
 		};
 		C9C99B0723E4BBB300DBE392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C99ADD23E4BBB200DBE392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C99AE423E4BBB200DBE392;
+			remoteInfo = ShoppingBasket;
+		};
+		C9FDD51A23E8CD6D000AA0E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C9C99ADD23E4BBB200DBE392 /* Project object */;
 			proxyType = 1;
@@ -59,6 +70,9 @@
 		C9C99B1E23E4C70900DBE392 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax.swift; sourceTree = "<group>"; };
 		C9FDD50D23E8B351000AA0E3 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
+		C9FDD51523E8CD6D000AA0E3 /* TaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FDD51F23E8CDDA000AA0E3 /* TaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxTests.swift; sourceTree = "<group>"; };
+		C9FDD52223E8D1D7000AA0E3 /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C9C99B0323E4BBB300DBE392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FDD51223E8CD6D000AA0E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -102,6 +123,7 @@
 				C9C99AE523E4BBB200DBE392 /* ShoppingBasket.app */,
 				C9C99AFB23E4BBB300DBE392 /* ShoppingBasketTests.xctest */,
 				C9C99B0623E4BBB300DBE392 /* ShoppingBasketUITests.xctest */,
+				C9FDD51523E8CD6D000AA0E3 /* TaxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +150,8 @@
 		C9C99AFE23E4BBB300DBE392 /* ShoppingBasketTests */ = {
 			isa = PBXGroup;
 			children = (
+				C9FDD52223E8D1D7000AA0E3 /* ItemTests.swift */,
+				C9FDD51F23E8CDDA000AA0E3 /* TaxTests.swift */,
 				C9C99AFF23E4BBB300DBE392 /* ShoppingBasketTests.swift */,
 				C9C99B0123E4BBB300DBE392 /* Info.plist */,
 			);
@@ -199,6 +223,24 @@
 			productReference = C9C99B0623E4BBB300DBE392 /* ShoppingBasketUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C9FDD51423E8CD6D000AA0E3 /* TaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FDD51C23E8CD6D000AA0E3 /* Build configuration list for PBXNativeTarget "TaxTests" */;
+			buildPhases = (
+				C9FDD51123E8CD6D000AA0E3 /* Sources */,
+				C9FDD51223E8CD6D000AA0E3 /* Frameworks */,
+				C9FDD51323E8CD6D000AA0E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9FDD51B23E8CD6D000AA0E3 /* PBXTargetDependency */,
+			);
+			name = TaxTests;
+			productName = TaxTests;
+			productReference = C9FDD51523E8CD6D000AA0E3 /* TaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +262,10 @@
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = C9C99AE423E4BBB200DBE392;
 					};
+					C9FDD51423E8CD6D000AA0E3 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = C9C99AE423E4BBB200DBE392;
+					};
 				};
 			};
 			buildConfigurationList = C9C99AE023E4BBB200DBE392 /* Build configuration list for PBXProject "ShoppingBasket" */;
@@ -238,6 +284,7 @@
 				C9C99AE423E4BBB200DBE392 /* ShoppingBasket */,
 				C9C99AFA23E4BBB300DBE392 /* ShoppingBasketTests */,
 				C9C99B0523E4BBB300DBE392 /* ShoppingBasketUITests */,
+				C9FDD51423E8CD6D000AA0E3 /* TaxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +315,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9FDD51323E8CD6D000AA0E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -289,7 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9FDD52423E8D22D000AA0E3 /* Item.swift in Sources */,
+				C9FDD52323E8D1D7000AA0E3 /* ItemTests.swift in Sources */,
+				C9FDD52123E8CECB000AA0E3 /* Tax.swift in Sources */,
 				C9C99B0023E4BBB300DBE392 /* ShoppingBasketTests.swift in Sources */,
+				C9FDD52023E8CDDA000AA0E3 /* TaxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C99B0B23E4BBB300DBE392 /* ShoppingBasketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FDD51123E8CD6D000AA0E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +378,11 @@
 			isa = PBXTargetDependency;
 			target = C9C99AE423E4BBB200DBE392 /* ShoppingBasket */;
 			targetProxy = C9C99B0723E4BBB300DBE392 /* PBXContainerItemProxy */;
+		};
+		C9FDD51B23E8CD6D000AA0E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C99AE423E4BBB200DBE392 /* ShoppingBasket */;
+			targetProxy = C9FDD51A23E8CD6D000AA0E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -564,6 +634,42 @@
 			};
 			name = Release;
 		};
+		C9FDD51D23E8CD6D000AA0E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidankaiser.TaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoppingBasket;
+			};
+			name = Debug;
+		};
+		C9FDD51E23E8CD6D000AA0E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aidankaiser.TaxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoppingBasket;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +705,15 @@
 			buildConfigurations = (
 				C9C99B1623E4BBB300DBE392 /* Debug */,
 				C9C99B1723E4BBB300DBE392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FDD51C23E8CD6D000AA0E3 /* Build configuration list for PBXNativeTarget "TaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FDD51D23E8CD6D000AA0E3 /* Debug */,
+				C9FDD51E23E8CD6D000AA0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
