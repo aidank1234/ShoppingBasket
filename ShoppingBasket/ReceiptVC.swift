@@ -10,12 +10,18 @@ import UIKit
 
 class ReceiptVC: UIViewController {
     var items: [Item] = []
+    var displayText: String = ""
     
     @IBOutlet weak var receiptText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        receiptText.text = generateOutputString()
+        if(receiptText == nil) {
+            displayText = generateOutputString()
+        }
+        else {
+           receiptText.text = generateOutputString()
+        }
     }
     
     private func generateOutputString() -> String {
@@ -24,7 +30,7 @@ class ReceiptVC: UIViewController {
             outputString = outputString + item.generateItemLine()
         }
         outputString = outputString + "Sales Taxes: " + String(format: "%.02f", Tax.allItemTaxes) + "\n"
-        outputString = outputString + "Total: " + String(format: "%.02f", Tax.allItemTaxes + Item.pricesCombined) + "\n"
+        outputString = outputString + "Total: " + String(format: "%.02f", Tax.allItemTaxes + Item.pricesCombined)
         return outputString
     }
 }
