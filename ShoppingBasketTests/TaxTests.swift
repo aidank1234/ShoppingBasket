@@ -11,7 +11,8 @@ import XCTest
 class TaxTests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        Item.pricesCombined = 0.0
+        Tax.allItemTaxes = 0.0
     }
 
     override func tearDown() {
