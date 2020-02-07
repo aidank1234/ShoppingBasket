@@ -9,10 +9,11 @@
 import XCTest
 
 class ShoppingBasketUITests: XCTestCase {
-
+    var app: XCUIApplication!
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
+        app = XCUIApplication()
+        app.launch()
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
@@ -23,14 +24,31 @@ class ShoppingBasketUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGoToCartButtonPresent() {
+        XCTAssertTrue(app.buttons["Go to Cart"].exists)
     }
+    
+    func testReceiptTextPresent() {
+        XCTAssertTrue(app.textViews.count == 0)
+        app.buttons["Go to Cart"].tap(withNumberOfTaps: 1, numberOfTouches: 1)
+        XCTAssertTrue(app.textViews.count == 1)
+    }
+    
+    func testDynamicReceiptText() {
+        app.tables.cells.element(boundBy: 0).tap()
+        app.tables.cells.element(boundBy: 1).tap()
+        app.buttons["Go to Cart"].tap(withNumberOfTaps: 1, numberOfTouches: 1)
+        let expectedString = "1 16lb bag of Skittles: 16.00\n1 Walkman: 109.99\nSales Taxes: 10.00\nTotal: 125.99"
+        XCTAssertTrue(app.textViews.element(boundBy: 0).value as! String == expectedString)
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.tables.cells.element(boundBy: 0).tap()
+        app.tables.cells.element(boundBy: 6).tap()
+        app.tables.cells.element(boundBy: 7).tap()
+        app.buttons["Go to Cart"].tap(withNumberOfTaps: 1, numberOfTouches: 1)
+        let expectedString2 = "1 Walkman: 109.99\n1 Discman: 60.50\n1 imported bottle of wine: 11.50\nSales Taxes: 17.00\nTotal: 181.99"
+        XCTAssertTrue(app.textViews.element(boundBy: 0).value as! String == expectedString2)
+    }
+    
 
     func testLaunchPerformance() {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
