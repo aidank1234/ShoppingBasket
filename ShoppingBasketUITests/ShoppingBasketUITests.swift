@@ -34,6 +34,19 @@ class ShoppingBasketUITests: XCTestCase {
         XCTAssertTrue(app.textViews.count == 1)
     }
     
+    func testCorrectNumberOfCellsPresent() {
+        XCTAssertTrue(app.tables.cells.count == 9)
+    }
+    
+    func testSelectItemsLabelPresent() {
+        XCTAssertTrue(app.staticTexts["Select Items (Before Tax)"].exists)
+    }
+    
+    func testReceiptLabelPresent() {
+        app.buttons["Go to Cart"].tap(withNumberOfTaps: 1, numberOfTouches: 1)
+        XCTAssertTrue(app.staticTexts["Receipt (After Tax)"].exists)
+    }
+    
     func testDynamicReceiptText() {
         app.tables.cells.element(boundBy: 0).tap()
         app.tables.cells.element(boundBy: 1).tap()
@@ -47,15 +60,5 @@ class ShoppingBasketUITests: XCTestCase {
         app.buttons["Go to Cart"].tap(withNumberOfTaps: 1, numberOfTouches: 1)
         let expectedString2 = "1 Walkman: 109.99\n1 Discman: 60.50\n1 imported bottle of wine: 11.50\nSales Taxes: 17.00\nTotal: 181.99"
         XCTAssertTrue(app.textViews.element(boundBy: 0).value as! String == expectedString2)
-    }
-    
-
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
     }
 }

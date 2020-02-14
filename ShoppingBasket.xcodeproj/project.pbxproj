@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C907C3D623F7361F00AAFFA8 /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99AEC23E4BBB200DBE392 /* ReceiptVC.swift */; };
 		C9C99AE923E4BBB200DBE392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99AE823E4BBB200DBE392 /* AppDelegate.swift */; };
 		C9C99AEB23E4BBB200DBE392 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99AEA23E4BBB200DBE392 /* SceneDelegate.swift */; };
 		C9C99AED23E4BBB200DBE392 /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99AEC23E4BBB200DBE392 /* ReceiptVC.swift */; };
@@ -17,15 +18,16 @@
 		C9C99B1923E4BBEB00DBE392 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99B1823E4BBEB00DBE392 /* Item.swift */; };
 		C9C99B1D23E4C3AD00DBE392 /* shopping.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C99B1C23E4C3AD00DBE392 /* shopping.json */; };
 		C9C99B1F23E4C70A00DBE392 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99B1E23E4C70900DBE392 /* SwiftyJSON.swift */; };
+		C9CFA37123EE185D0059F098 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99B1E23E4C70900DBE392 /* SwiftyJSON.swift */; };
+		C9CFA37323EE18C10059F098 /* shopping.json in Resources */ = {isa = PBXBuildFile; fileRef = C9C99B1C23E4C3AD00DBE392 /* shopping.json */; };
+		C9D2F49F23F207800013A45E /* ReceiptVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D2F49E23F207800013A45E /* ReceiptVM.swift */; };
+		C9D2F4A123F2078C0013A45E /* StoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D2F4A023F2078C0013A45E /* StoreVM.swift */; };
 		C9FDD50C23E8AAF7000AA0E3 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */; };
 		C9FDD50E23E8B351000AA0E3 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD50D23E8B351000AA0E3 /* StoreVC.swift */; };
 		C9FDD52023E8CDDA000AA0E3 /* TaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD51F23E8CDDA000AA0E3 /* TaxTests.swift */; };
-		C9FDD52123E8CECB000AA0E3 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */; };
 		C9FDD52323E8D1D7000AA0E3 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD52223E8D1D7000AA0E3 /* ItemTests.swift */; };
-		C9FDD52423E8D22D000AA0E3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99B1823E4BBEB00DBE392 /* Item.swift */; };
 		C9FDD52A23EB4D33000AA0E3 /* ReceiptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDD52923EB4D33000AA0E3 /* ReceiptTests.swift */; };
 		C9FDD52B23EB4D9C000AA0E3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99B1E23E4C70900DBE392 /* SwiftyJSON.swift */; };
-		C9FDD52C23EB505C000AA0E3 /* ReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C99AEC23E4BBB200DBE392 /* ReceiptVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		C9C99B1823E4BBEB00DBE392 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C9C99B1C23E4C3AD00DBE392 /* shopping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopping.json; sourceTree = "<group>"; };
 		C9C99B1E23E4C70900DBE392 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		C9D2F49E23F207800013A45E /* ReceiptVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptVM.swift; sourceTree = "<group>"; };
+		C9D2F4A023F2078C0013A45E /* StoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVM.swift; sourceTree = "<group>"; };
 		C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax.swift; sourceTree = "<group>"; };
 		C9FDD50D23E8B351000AA0E3 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
 		C9FDD51523E8CD6D000AA0E3 /* TaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C907C3D523F7349D00AAFFA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9C99B1823E4BBEB00DBE392 /* Item.swift */,
+				C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C9C99ADC23E4BBB200DBE392 = {
 			isa = PBXGroup;
 			children = (
@@ -137,14 +150,12 @@
 				C9C99B1C23E4C3AD00DBE392 /* shopping.json */,
 				C9C99AE823E4BBB200DBE392 /* AppDelegate.swift */,
 				C9C99AEA23E4BBB200DBE392 /* SceneDelegate.swift */,
-				C9C99AEC23E4BBB200DBE392 /* ReceiptVC.swift */,
 				C9C99AEE23E4BBB200DBE392 /* Main.storyboard */,
 				C9C99AF123E4BBB200DBE392 /* Assets.xcassets */,
 				C9C99AF323E4BBB200DBE392 /* LaunchScreen.storyboard */,
 				C9C99AF623E4BBB200DBE392 /* Info.plist */,
-				C9C99B1823E4BBEB00DBE392 /* Item.swift */,
-				C9FDD50B23E8AAF7000AA0E3 /* Tax.swift */,
-				C9FDD50D23E8B351000AA0E3 /* StoreVC.swift */,
+				C907C3D523F7349D00AAFFA8 /* Models */,
+				C9D2F49D23F206800013A45E /* ViewControllers */,
 			);
 			path = ShoppingBasket;
 			sourceTree = "<group>";
@@ -167,6 +178,17 @@
 				C9C99B0C23E4BBB300DBE392 /* Info.plist */,
 			);
 			path = ShoppingBasketUITests;
+			sourceTree = "<group>";
+		};
+		C9D2F49D23F206800013A45E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9C99AEC23E4BBB200DBE392 /* ReceiptVC.swift */,
+				C9D2F49E23F207800013A45E /* ReceiptVM.swift */,
+				C9FDD50D23E8B351000AA0E3 /* StoreVC.swift */,
+				C9D2F4A023F2078C0013A45E /* StoreVM.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CFA37323EE18C10059F098 /* shopping.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +354,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D2F4A123F2078C0013A45E /* StoreVM.swift in Sources */,
 				C9C99B1923E4BBEB00DBE392 /* Item.swift in Sources */,
+				C9D2F49F23F207800013A45E /* ReceiptVM.swift in Sources */,
 				C9C99AED23E4BBB200DBE392 /* ReceiptVC.swift in Sources */,
 				C9C99AE923E4BBB200DBE392 /* AppDelegate.swift in Sources */,
 				C9FDD50E23E8B351000AA0E3 /* StoreVC.swift in Sources */,
@@ -345,13 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9FDD52C23EB505C000AA0E3 /* ReceiptVC.swift in Sources */,
 				C9FDD52A23EB4D33000AA0E3 /* ReceiptTests.swift in Sources */,
-				C9FDD52423E8D22D000AA0E3 /* Item.swift in Sources */,
 				C9FDD52323E8D1D7000AA0E3 /* ItemTests.swift in Sources */,
-				C9FDD52123E8CECB000AA0E3 /* Tax.swift in Sources */,
 				C9FDD52B23EB4D9C000AA0E3 /* SwiftyJSON.swift in Sources */,
 				C9FDD52023E8CDDA000AA0E3 /* TaxTests.swift in Sources */,
+				C907C3D623F7361F00AAFFA8 /* ReceiptVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C99B0B23E4BBB300DBE392 /* ShoppingBasketUITests.swift in Sources */,
+				C9CFA37123EE185D0059F098 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
